@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerDiv">
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="inputText" placeholder="Ingrese solo letras minúsculas y sin acento"></textarea>
+            <p id="uppercaseWarning">* No se aceptan palabras con mayúsculas o acentos.</p>
+            <div class="buttons" id="containerButton">
+                <button id="encryptBtn">Encriptar</button>
+                <button id="decryptBtn">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-container">
+            <div id="outputImageContainer">
+                <img id="outputImage" src="./imagenes/Muñeco.png" alt="Imagen descriptiva">
+            </div>
+            <textarea id="outputText" placeholder="El resultado aparecerá aquí" readonly></textarea>
+            <button id="copyBtn">Copiar</button>
+        </div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
